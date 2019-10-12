@@ -1,0 +1,16 @@
+2019-10-09 11:25:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+				
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.stackroute.keepnote.controller.CategoryController required a bean of type 'com.stackroute.keepnote.service.CategoryService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.stackroute.keepnote.service.CategoryService' in your configuration.
+

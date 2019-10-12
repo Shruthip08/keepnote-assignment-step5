@@ -1,0 +1,29 @@
+package com.stackroute.keepnote.service;
+
+import com.stackroute.keepnote.exception.CategoryDoesNoteExistsException;
+import com.stackroute.keepnote.exception.CategoryNotCreatedException;
+import com.stackroute.keepnote.exception.CategoryNotFoundException;
+import com.stackroute.keepnote.model.Category;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface CategoryService {
+	
+	/*
+	 * Should not modify this interface. You have to implement these methods in
+	 * corresponding Impl classes
+	 */
+
+    Category createCategory(Category category) throws CategoryNotCreatedException;
+
+    boolean deleteCategory(String categoryId) throws CategoryDoesNoteExistsException;
+
+    Category updateCategory(Category category, String categoryId) throws CategoryNotFoundException;
+
+    Category getCategoryById(String categoryId) throws CategoryNotFoundException;
+
+    List<Category> getAllCategoryByUserId(String userId);
+
+}
